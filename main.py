@@ -1,6 +1,6 @@
-from fila_prioritaria import FilaPrioriatia
+from fila_prioritaria import FilaPrioritaria
 
-fila_teste = FilaPrioriatia()
+fila_teste = FilaPrioritaria()
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()
 fila_teste.atualiza_fila()

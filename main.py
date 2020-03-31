@@ -9,4 +9,4 @@ print(fila_teste.chama_cliente(10))
 print(fila_teste.chama_cliente(2))
 print(fila_teste.chama_cliente(4))
 
-print(fila_teste.estatistica('10/01/1993', 197, 'detail'))
+print(fila_teste.estatistica('10/01/1993', 210, 'detail'))

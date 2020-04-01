@@ -1,7 +1,7 @@
 import abc
 from typing import List
 
-from constantes import TAMANHO_PADRAO_MAX, TAMANHO_PADRAO_MIN
+from constantes import TAMANHO_PADRAO_MAX, TAMANHO_PADRAO_MIN, KEY_WORD
 
 
 class FilaBase(metaclass=abc.ABCMeta):
@@ -27,6 +27,13 @@ class FilaBase(metaclass=abc.ABCMeta):
         self.reseta_fila()
         self.gera_senha_atual()
         self.insere_cliente()
+
+    def apaga_dados(self, senha: str) -> None:
+        if senha == KEY_WORD:
+            self.clientes_atendidos = []
+            print('Dados apagados')
+        else:
+            print('Acesso negado!')
 
     @abc.abstractmethod
     def chama_cliente(self, caixa: int) -> str:

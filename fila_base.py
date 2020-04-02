@@ -28,7 +28,7 @@ class FilaBase(metaclass=abc.ABCMeta):
         self.gera_senha_atual()
         self.insere_cliente()
 
-    def apaga_dados(self, senha: str) -> None:
+    def apaga_dados(self, senha: str) -> str:
         if senha == KEY_WORD:
             self.clientes_atendidos = []
             print('Dados apagados')
